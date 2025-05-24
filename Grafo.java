@@ -11,7 +11,6 @@ public class Grafo {
     private int numCiudades;
     private Clima climaActual = Clima.NORMAL;
 
-    // Clase interna para tiempos por clima
     private static class TiempoViaje {
         double normal, lluvia, nieve, tormenta;
         boolean existe = false;

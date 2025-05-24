@@ -89,7 +89,7 @@ public class Main {
                     System.out.println("Conexión modificada.");
 
                 } else if (opcion2 == 3) {
-                    System.out.println("Seleccione clima global: 1. Normal  2. Lluvia  3. Nieve  4. Tormenta");
+                    System.out.println("Seleccione clima: 1. Normal  2. Lluvia  3. Nieve  4. Tormenta");
                     int climaSeleccion = sc.nextInt(); sc.nextLine();
 
                     Grafo.Clima clima = Grafo.Clima.NORMAL;
@@ -98,7 +98,7 @@ public class Main {
                         case 2 -> clima = Grafo.Clima.LLUVIA;
                         case 3 -> clima = Grafo.Clima.NIEVE;
                         case 4 -> clima = Grafo.Clima.TORMENTA;
-                        default -> System.out.println("Opción inválida, clima no cambiado.");
+                        default -> System.out.println("Opcion invalida, clima no cambiado.");
                     }
 
                     grafo.setClima(clima);
